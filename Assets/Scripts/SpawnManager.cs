@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject powerupPrefab;
     
-    public int enemyCount;
+    private int enemyCount;
     public int waveNumber = 1;
 
     private float spawnRange = 9.0f;
@@ -41,6 +41,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    // Generate random spawn position
     private Vector3 GenerateSpawnPosition()
     {
         // Generate random values for X and Z points
